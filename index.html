@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirBNB - BEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="barra contenedor">
+        <div class="barra__logo">
+          <p class="barra__nombre">Viaje</p>
+          <nav class="barra__navegacion">
+            <a href="#">Lugar para Hospedarte</a>
+            <a href="#">Experiencias</a>
+            <a href="#">Experiencias en linea</a>
+          </nav>
+          <nav class="barra__login">
+            <a href="#">Hazte Anfitrion</a>
+          </nav>
+        </div>
+      </div>
+      <form class="formulario">
+        <div class="formulario__campo">
+          <label for="ubicacion" class="formulario__label"> Ubicacion </label>
+          <input
+            type="text"
+            id="ubicacion"
+            class="formulario__input"
+            placeholder="¿A donde viajas?"
+          />
+        </div>
+        <div class="formulario__campo">
+          <label for="llegada" class="formulario__label">Llegada</label>
+          <input type="date" id="Llegada" class="formulario__input" />
+        </div>
+      </form>
+    </header>
+  </body>
+</html>
