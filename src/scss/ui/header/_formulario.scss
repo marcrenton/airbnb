@@ -2,23 +2,59 @@
 @use "base/mixins" as m;
 
 .formulario {
+  padding: 3rem 0;
   background-color: v.$blanco;
   margin: 5rem auto 2rem auto;
   border-radius: 5rem;
   box-shadow: 0 3px 7px 0 v.$gris;
   @include m.desktop {
+    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     max-width: 90rem;
+  }
+  &__input {
+    display: block;
+    color: v.$gris;
+    width: 100%;
+    border: none;
+  }
+  &__campo {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
 
-    &__input {
-      border: none;
+    &:nth-child(1) {
+      @include m.desktop {
+        padding-left: 4rem;
+      }
     }
-    &__campo {
-      padding: 1rem 2rem;
-      display: flex;
-      flex-direction: column;
+
+    &:hover {
+      background-color: #f0f0f0;
+      border-radius: 5rem;
+      box-shadow: 0px 6px 10px rgb(0 0 0/40%);
     }
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  &__submit {
+    display: block;
+    padding: 0 3rem;
+    height: 4rem;
+    border: none;
+    border-radius: 5rem;
+    background-image: radial-gradient(
+      circle,
+      rgb(255, 56, 92) 0%,
+      v.$secundario 100%
+    );
+    color: v.$blanco;
+    text-transform: uppercase;
+    font-size: 1.2rem;
   }
 }
