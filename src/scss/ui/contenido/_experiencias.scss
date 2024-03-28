@@ -1,0 +1,19 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.experiencias {
+  &__listado {
+    @include m.tablet {
+      @include m.grid(3, 2rem);
+    }
+  }
+}
+.experiencia {
+  &__imagen {
+  }
+  &__titulo {
+  }
+
+  &__descripcion {
+  }
+}
