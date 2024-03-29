@@ -3,12 +3,19 @@
 
 .experiencias {
   &__listado {
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    column-gap: 2rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
     @include m.tablet {
       @include m.grid(3, 2rem);
     }
   }
 }
 .experiencia {
+  scroll-snap-align: center;
   &__imagen {
   }
   &__titulo {
