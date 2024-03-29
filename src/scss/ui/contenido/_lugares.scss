@@ -23,7 +23,7 @@
     }
   }
   .lugar {
-    scroll-snap-type: center;
+    scroll-snap-align: center;
     &__imagen {
       border-radius: 1rem;
     }
